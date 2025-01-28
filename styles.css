@@ -1,4 +1,4 @@
-/* Styles for the day theme */
+/* Light theme (day) */
 #app.day {
   background-color: white;
   color: black;
@@ -18,7 +18,7 @@
   font-size: 16px;
 }
 
-/* Styles for the night theme */
+/* Dark theme (night) */
 #app.night {
   background-color: black;
   color: white;
