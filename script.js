@@ -1,21 +1,28 @@
-//your code here
-
+// Add an event listener to the button with id="swap"
 document.getElementById("swap").addEventListener("click", swapTheme);
 
 function swapTheme() {
   const app = document.getElementById("app");
   const button = document.getElementById("swap");
 
-  // Toggle the 'night' class on the #app div
-  app.classList.toggle("night");
+  // Check the current theme and toggle classes
+  if (app.classList.contains("day")) {
+    app.classList.remove("day");
+    app.classList.add("night");
 
-  // Toggle the 'button_night' class on the #swap button
-  button.classList.toggle("button_night");
+    button.classList.remove("button_day");
+    button.classList.add("button_night");
 
-  // Optional: Change button text to indicate the current theme
-  if (app.classList.contains("night")) {
+    // Optionally update the button text
     button.textContent = "Switch to Light Theme";
   } else {
+    app.classList.remove("night");
+    app.classList.add("day");
+
+    button.classList.remove("button_night");
+    button.classList.add("button_day");
+
+    // Optionally update the button text
     button.textContent = "Switch to Dark Theme";
   }
 }

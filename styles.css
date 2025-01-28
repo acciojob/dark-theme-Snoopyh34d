@@ -1,26 +1,30 @@
-#app {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+/* Styles for the day theme */
+#app.day {
   background-color: white;
   color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.night {
+.button_day {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Styles for the night theme */
+#app.night {
   background-color: black;
   color: white;
 }
 
-#swap {
-  outline: 0;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .button_night {
-  background-color: blue;
+  background-color: darkgray;
   color: white;
 }
